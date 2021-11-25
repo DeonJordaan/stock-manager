@@ -13,12 +13,90 @@
 		/>
 
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="shortcut icon" type="image/png" href="img/ayrton-senna-helmet-vector.png" />
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="img/ayrton-senna-helmet-vector.png"
+		/>
 
-		<title id="title">Ayrton Senna - Formula 1's greatest champion</title>
+		<title id="title">BitCube Stock Manager</title>
 	</head>
 	<body id="main" class="container">
 		<header class="header"></header>
+		<section class="add-stock">
+			<form>
+				<div class="form-header">Add Stock</div>
+				<div class="form__product-code">
+					<label for="product-code">Select a Product Code</label>
+					<select
+						name="product-code"
+						id="product-code"
+						class="product-code"
+					>
+						<option value="product1">Product 1</option>
+						<option value="product2">Product 2</option>
+						<option value="product3">Product 3</option>
+					</select>
+				</div>
+				<div class="form__items">
+					<label for="items-received">Items Received</label>
+					<input
+						type="number"
+						class="items-received"
+						id="items-received"
+					/>
+				</div>
+				<div class="form__item-price">
+					<label for="item-price">Price per Item Received</label>
+					<input type="number" class="item-price" id="item-price" />
+				</div>
+				<button type="submit">Add Stock</button>
+			</form>
+		</section>
+		<section class="remove-stock">
+			<form>
+				<div class="form-header">Remove Stock</div>
+				<div class="form__product-code">
+					<label for="product-code">Select a Product Code</label>
+					<select
+						name="product-code"
+						id="product-code"
+						class="product-code"
+					>
+						<option value="product1">Product 1</option>
+						<option value="product2">Product 2</option>
+						<option value="product3">Product 3</option>
+					</select>
+				</div>
+				<div class="form__buyer-email">
+					<label for="buyer-email">Buyer Email Address</label>
+					<input type="email" class="buyer-email" id="buyer-email" />
+				</div>
+				<div class="form__item-price">
+					<label for="item-price">Items Bought</label>
+					<input type="number" class="item-price" id="item-price" />
+				</div>
+				<button type="submit">Item Shipped</button>
+			</form>
+		</section>
+		<section class="stock-levels">
+			<div class="form-header">Stock Levels</div>
+			<section class="product__01">
+				<div class="product__01--label">Product 01</div>
+				<div class="product__01--average-price">3.33</div>
+				<div class="product__01--quantity">33</div>
+			</section>
+			<section class="product__02">
+				<div class="product__02--label">Product 02</div>
+				<div class="product__02--average-price">6.66</div>
+				<div class="product__02--quantity">66</div>
+			</section>
+			<section class="product__03">
+				<div class="product__03--label">Product 03</div>
+				<div class="product__03--average-price">9.99</div>
+				<div class="product__03--quantity">99</div>
+			</section>
+		</section>
 
 		<footer class="footer"></footer>
 	</body>
