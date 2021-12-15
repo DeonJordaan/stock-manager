@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+  background-color: lightgray;
+  font-size: 1.25rem; }
+
+button {
+  background-color: #4a72d8;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 3px;
+  margin: 0.5rem 0;
+  color: white;
+  width: 70%; }
+
+form {
+  width: 70%; }
+
+.form-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: black; }
+
+.display {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  margin: 2rem auto; }
+
+.add-stock {
+  background-color: white; }
+
+.remove-stock {
+  background-color: white; }
+
+.stock-levels {
+  background-color: white; }
+
+.product {
+  min-width: 70%; }
+
+.product__01,
+.product__02,
+.product__03 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+  box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888, 2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7; }

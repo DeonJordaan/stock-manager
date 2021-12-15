@@ -8,7 +8,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap"
+			href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
 			rel="stylesheet"
 		/>
 
@@ -23,9 +23,9 @@
 	</head>
 	<body id="main" class="container">
 		<header class="header"></header>
-		<section class="add-stock">
+		<section class="add-stock display">
 			<form>
-				<div class="form-header">Add Stock</div>
+				<header class="form-header">Add Stock</header>
 				<div class="form__product-code">
 					<label for="product-code">Select a Product Code</label>
 					<select
@@ -53,9 +53,9 @@
 				<button type="submit">Add Stock</button>
 			</form>
 		</section>
-		<section class="remove-stock">
+		<section class="remove-stock display">
 			<form>
-				<div class="form-header">Remove Stock</div>
+				<header class="form-header">Remove Stock</header>
 				<div class="form__product-code">
 					<label for="product-code">Select a Product Code</label>
 					<select
@@ -79,22 +79,30 @@
 				<button type="submit">Item Shipped</button>
 			</form>
 		</section>
-		<section class="stock-levels">
-			<div class="form-header">Stock Levels</div>
-			<section class="product__01">
-				<div class="product__01--label">Product 01</div>
-				<div class="product__01--average-price">3.33</div>
-				<div class="product__01--quantity">33</div>
-			</section>
-			<section class="product__02">
-				<div class="product__02--label">Product 02</div>
-				<div class="product__02--average-price">6.66</div>
-				<div class="product__02--quantity">66</div>
-			</section>
-			<section class="product__03">
-				<div class="product__03--label">Product 03</div>
-				<div class="product__03--average-price">9.99</div>
-				<div class="product__03--quantity">99</div>
+		<section class="stock-levels display">
+			<section class="product">
+				<header class="form-header">Stock Levels</header>
+				<section class="product__01">
+					<div class="product__01--group">
+						<div class="product__01--label">Product 01</div>
+						<div class="product__01--average-price">3.33</div>
+					</div>
+					<div class="product__01--quantity">33</div>
+				</section>
+				<section class="product__02">
+					<div class="product__01--group">
+						<div class="product__02--label">Product 02</div>
+						<div class="product__02--average-price">6.66</div>
+					</div>
+					<div class="product__02--quantity">66</div>
+				</section>
+				<section class="product__03">
+					<div class="product__01--group">
+						<div class="product__03--label">Product 03</div>
+						<div class="product__03--average-price">9.99</div>
+					</div>
+					<div class="product__03--quantity">99</div>
+				</section>
 			</section>
 		</section>
 
