@@ -39,7 +39,7 @@ button {
 
 button:hover,
 button:focus {
-	background: #0053ba;
+	background: #064ca2; //FIXME THIS DOESN'T WORK YET, BECAUSE BUTTON COLOURS ARE SET INFIVIDUALLY
 }
 
 button:focus {
@@ -80,6 +80,16 @@ input {
 	margin: 2rem auto;
 	padding: 1rem 0;
 	border-radius: 5px;
+}
+
+.product-input {
+	background-color: rgb(243, 241, 241);
+	// background-color: $bg-color;
+}
+
+.product-input button {
+	background-color: #0069ed;
+	// background-color: $bg-color;
 }
 
 .add-stock {

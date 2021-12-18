@@ -26,7 +26,7 @@ button {
 
 button:hover,
 button:focus {
-  background: #0053ba; }
+  background: #064ca2; }
 
 button:focus {
   outline: 1px solid #fff;
@@ -60,6 +60,12 @@ input {
   margin: 2rem auto;
   padding: 1rem 0;
   border-radius: 5px; }
+
+.product-input {
+  background-color: #f3f1f1; }
+
+.product-input button {
+  background-color: #0069ed; }
 
 .add-stock {
   background-color: #f3f1f1; }
