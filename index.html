@@ -30,6 +30,15 @@
 						<label for="description">Description</label>
 						<input type="text" id="description" />
 					</div>
+					<div class="form-control">
+						<label for="price">Price</label>
+						<input
+							type="number"
+							id="price"
+							step="0.01"
+							min="0.01"
+						/>
+					</div>
 					<button type="submit">ADD PRODUCT</button>
 				</form>
 			</section>
@@ -109,31 +118,47 @@
 			</section>
 		</template>
 		<template>
+			<section class="stock-item product">
+				<li class="product__01">
+					<div class="product__01--group">
+						<div class="product__01--label"></div>
+						<div class="product__01--average-price"></div>
+					</div>
+					<div class="product__01--quantity"></div>
+				</li>
+			</section>
+		</template>
+		<template>
 			<section class="stock-levels display product">
 				<header class="form-header">Stock Levels</header>
-				<section class="product__01">
-					<div class="product__01--group">
-						<div class="product__01--label">Product 01</div>
-						<div class="product__01--average-price">3.33</div>
-					</div>
-					<div class="product__01--quantity">33</div>
-				</section>
-				<section class="product__02">
-					<div class="product__01--group">
-						<div class="product__02--label">Product 02</div>
-						<div class="product__02--average-price">6.66</div>
-					</div>
-					<div class="product__02--quantity">66</div>
-				</section>
-				<section class="product__03">
-					<div class="product__01--group">
-						<div class="product__03--label">Product 03</div>
-						<div class="product__03--average-price">9.99</div>
-					</div>
-					<div class="product__03--quantity">99</div>
-				</section>
+				<ul id="stock-list"></ul>
 			</section>
 		</template>
 		<div id="app"></div>
 	</body>
 </html>
+
+<!-- <section class="stock-levels display product">
+	<header class="form-header">Stock Levels</header>
+	<section class="product__01">
+		<div class="product__01--group">
+			<div class="product__01--label">Product 01</div>
+			<div class="product__01--average-price">3.33</div>
+		</div>
+		<div class="product__01--quantity">33</div>
+	</section>
+	<section class="product__02">
+		<div class="product__01--group">
+			<div class="product__02--label">Product 02</div>
+			<div class="product__02--average-price">6.66</div>
+		</div>
+		<div class="product__02--quantity">66</div>
+	</section>
+	<section class="product__03">
+		<div class="product__01--group">
+			<div class="product__03--label">Product 03</div>
+			<div class="product__03--average-price">9.99</div>
+		</div>
+		<div class="product__03--quantity">99</div>
+	</section>
+</section> -->
