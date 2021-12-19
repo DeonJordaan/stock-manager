@@ -2,10 +2,10 @@ class Product {
 	constructor(
 		public product: string,
 		public description: string,
-		public price?: number,
-		public quantity?: number,
-		public averagePrice?: number, //maybe not include this hereand only as a method SOMEWHERE?
-		public prices?: []
+		public price: number,
+		public quantity: number,
+		public averagePrice: number, //maybe not include this hereand only as a method SOMEWHERE?
+		public prices: []
 	) {}
 }
 
@@ -84,7 +84,7 @@ class StockItem {
 	hostElement: HTMLUListElement;
 	element: HTMLLIElement;
 
-	private product: Product | undefined;
+	private productItem: Product | undefined;
 
 	constructor(product: string, description: string, avgPrice: number) {
 		this.templateElement = document.getElementById(
@@ -97,10 +97,10 @@ class StockItem {
 			true
 		);
 		this.element = importedNode.firstElementChild as HTMLLIElement;
-		if (this.product) {
-			this.product.product = product;
-			this.product.description = description;
-			this.product.averagePrice = avgPrice;
+		if (this.productItem) {
+			this.productItem.product = product;
+			this.productItem.description = description;
+			this.productItem.averagePrice = avgPrice;
 		}
 		this.attach();
 	}
@@ -111,11 +111,11 @@ class StockItem {
 
 	renderContent() {
 		this.element.querySelector('#product__01--label')!.textContent =
-			this.product?.product;
+			this.productItem?.product;
 		this.element.querySelector('#product__01--average-price')!.textContent =
-			this.product.averagePrice;
+			this.productItem.averagePrice;
 		this.element.querySelector('#product__01--quantity')!.textContent =
-			this.product.quantity;
+			this.productItem.quantity;
 	}
 }
 
@@ -171,8 +171,14 @@ class StockList {
 			'stock-list'
 		)! as HTMLUListElement;
 		listEl.innerHTML = '';
-		for (const product of this.stockItems) {
-			new StockItem();
+		if (this.stockItems) {
+			for (const product of this.stockItems) {
+				new StockItem(
+					product.product,
+					product.description,
+					product.averagePrice
+				);
+			}
 		}
 	}
 }
